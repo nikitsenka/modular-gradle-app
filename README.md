@@ -1,5 +1,6 @@
 
 # webApplicationArchitype
+
 /individuals
                 /individuals-api
                                 /dao
