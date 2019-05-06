@@ -4,3 +4,7 @@ pluginManagement {
 	}
 }
 rootProject.name = 'modular-gradle-app'
+
+include 'app'
+include 'domain'
+
