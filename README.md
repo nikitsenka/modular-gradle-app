@@ -1,2 +1,2 @@
 
-# webApplicationArchitype
+# Modular gradle application example
