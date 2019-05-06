@@ -1,15 +1,22 @@
 plugins {
-    id 'java'
+    id 'org.javamodularity.moduleplugin'
 }
 
-group = 'com.nikitsenka'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
-
-repositories {
-    mavenCentral()
+//region NO-OP (DSL testing)
+compileJava {
+    moduleOptions {
+        addModules = []
+        compileModuleInfoSeparately = false
+    }
 }
 
-dependencies {
-
+test {
+    moduleOptions {
+        addModules = []
+        runOnClasspath = false
+    }
 }
+
+modularity {
+}
+

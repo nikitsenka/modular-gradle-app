@@ -1,20 +1,12 @@
 plugins {
 	id 'org.springframework.boot' version '2.1.4.RELEASE'
-	id 'java'
+	id 'org.javamodularity.moduleplugin'
 }
 
 apply plugin: 'io.spring.dependency-management'
 
-group = 'com.nikitsenka'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
-
-repositories {
-	mavenCentral()
-}
-
 dependencies {
-	implementation project(':domain')
+	implementation project(':modulargradleapp.domain')
 	implementation 'org.springframework.boot:spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

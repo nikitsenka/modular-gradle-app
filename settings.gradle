@@ -5,6 +5,6 @@ pluginManagement {
 }
 rootProject.name = 'modular-gradle-app'
 
-include 'app'
-include 'domain'
+include 'modulargradleapp.app'
+include 'modulargradleapp.domain'
 
